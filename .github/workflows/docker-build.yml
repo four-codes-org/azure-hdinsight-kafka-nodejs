@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: docker build
-        run: docker build -t  ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_ID .
+        run: DOCKER_BUILDKIT=1 docker build -t  ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_ID .
       - name: show the docker image name
         run: echo ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_ID
       - name: docker push
