@@ -24,6 +24,6 @@ jobs:
       - name: show the docker image name
         run: echo ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_ID
       - name: docker push
-        run: docker push ${{ secrets.DOCKER_USER }}/flaskapi:$GITHUB_RUN_ID
+        run: docker push ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_ID
       - name: docker logout
         run: docker logout
