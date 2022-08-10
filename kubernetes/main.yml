@@ -52,7 +52,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: n4b-xxx-dev.xxx.xxx.com
+    - host: fourtimes.ml
       http:
         paths:
           - backend:
