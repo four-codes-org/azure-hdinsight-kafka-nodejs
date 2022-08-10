@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "kafkajs": "^2.1.0",
+    "pretty-print-json": "^1.2.5"
+  },
+  "name": "kafka",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "script": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
