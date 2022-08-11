@@ -79,9 +79,6 @@ app.get("/kafka/topic/:topic/:requestId", (req, res) => {
     if (topic == undefined && requestId == undefined) {
       res.send({ statusCode: 404, message: "Bad request" });
     } else {
-      console.log(
-        prettyPrintJson(topicReader.getMessages(dataScrap, requestId))
-      );
       res.json(topicReader.getMessages(dataScrap, requestId));
     }
   }
