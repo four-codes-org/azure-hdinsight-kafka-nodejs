@@ -25,7 +25,7 @@ var topicList = [
   "ISOConvertor_MT2MX_Response",
   "Error_Mx2Mt",
   "Error_Mt2Mx",
-  "consolidator-topic"
+  "consolidator_topic"
 ];
 
 const app = express();
