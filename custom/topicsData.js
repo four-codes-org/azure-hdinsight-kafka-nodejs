@@ -1,7 +1,7 @@
 class topicsData {
   constructor() {
     this.CBPR_Validator_Ingress = [];
-    this.consolidator-topic = [];
+    this.consolidator_topic = [];
     this.MX2MT_Transformer_Ingress = [];
     this.MT_Builder_Ingress = [];
     this.Error = [];
