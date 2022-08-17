@@ -4,9 +4,9 @@ const topicsData = require("./custom/topicsData");
 const topicReader = new topicsData();
 const topicLookupFromList = require("./custom/topicLookupFromList");
 
-// let KAFKA_HOST = ["localhost:9092"]; 
+let KAFKA_HOST = ["localhost:9092"]; 
 
-let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
+// let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
 
 var topicList = [
   "CBPR_Validator_Ingress",
@@ -18,7 +18,6 @@ var topicList = [
   "MX_Validator_Ingress",
   "MT_Validator_Ingress",
   "MT_Response_Builder_Ingress",
-  "test",
   "MT_Ingestor_Ingress",
   "ISOConvertor_Response",
   "MX_Builder_Ingress",
