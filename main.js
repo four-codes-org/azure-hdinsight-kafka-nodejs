@@ -4,7 +4,7 @@ const topicsData = require("./custom/topicsData");
 const topicReader = new topicsData();
 const topicLookupFromList = require("./custom/topicLookupFromList");
 
-let KAFKA_HOST = ["localhost:9092"]; 
+let KAFKA_HOST = ["192.168.0.101:9092"]; 
 
 // let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
 
