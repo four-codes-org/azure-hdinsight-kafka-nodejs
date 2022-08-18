@@ -32,3 +32,11 @@ jobs:
         run: docker push ${{ secrets.DOCKER_USER }}/azure-hdinsight-kafka:$GITHUB_RUN_NUMBER
       - name: docker logout
         run: docker logout
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: "107.23.14.177"
+          username: "ubuntu"
+          key: ${{ secrets.KEY }}
+          port: 22
+          script: whoami
