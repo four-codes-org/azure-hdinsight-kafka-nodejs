@@ -3,10 +3,11 @@ const { Kafka } = require("kafkajs");
 const topicsData = require("./custom/topicsData");
 const topicReader = new topicsData();
 const topicLookupFromList = require("./custom/topicLookupFromList");
+const res = require("express/lib/response");
 
-let KAFKA_HOST = ["192.168.0.101:9092"]; 
+// let KAFKA_HOST = ["localhost:9092"];
 
-// let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
+let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
 
 var topicList = [
   "CBPR_Validator_Ingress",
@@ -24,7 +25,7 @@ var topicList = [
   "ISOConvertor_MT2MX_Response",
   "Error_Mx2Mt",
   "Error_Mt2Mx",
-  "consolidator_topic"
+  "consolidator_topic",
 ];
 
 const app = express();
@@ -51,6 +52,7 @@ app.get("/kafka", async (req, res) => {
       "/kafka/topics",
       "/kafka/topic/[topicName]",
       "/kafka/topic/[topicName]/[requestId]",
+      "/kafka/topic/[topicName]/[requestId]/[messageTrackingId]",
     ],
     Status: 200,
   });
@@ -80,6 +82,29 @@ app.get("/kafka/topic/:topic/:requestId", (req, res) => {
       res.send({ statusCode: 404, message: "Bad request" });
     } else {
       res.json(topicReader.getMessages(dataScrap, requestId));
+    }
+  }
+});
+
+app.get("/kafka/topic/:topic/:requestId/:messageTrackingId", (req, res) => {
+  let topic = req.params.topic;
+  let requestId = req.params.requestId;
+  let messageTrackingId = req.params.messageTrackingId;
+  let pathRouteTopic = topicLookupFromList(topicList, topic);
+  if (pathRouteTopic === undefined) {
+    res.json({ status: "topic not found", statusCode: 404 });
+  } else {
+    let dataScrap = topicReader[topic];
+    if ( topic == undefined && requestId == undefined && messageTrackingId == undefined ) {
+      res.send({ statusCode: 404, message: "Bad request" });
+    } else {
+      if (topic === "ISOConvertor_Response" || topic === "ISOConvertor_MT2MX_Response" ) {
+        res.json(topicReader.getMessagesWithMessageTrackingId(dataScrap,requestId,messageTrackingId));
+      } else {
+        res.json({
+          messages: "this topic not supported to filter messageTrackingId",
+        });
+      }
     }
   }
 });
