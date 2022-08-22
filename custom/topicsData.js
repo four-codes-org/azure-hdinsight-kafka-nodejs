@@ -30,8 +30,16 @@ class topicsData {
     this[topic].push(parsedData);
   }
 
-  getMessages(topic, parameters) {
-    return topic.filter((data) => data.requestId === parameters);
+  getMessages(topic, requestId) {
+    let dataRequestId = topic.filter((data) => data.requestId === requestId);
+    return dataRequestId;
+  }
+  
+  getMessagesWithMessageTrackingId(topic, requestId, messageTrackingId) {
+    console.log(topic);
+      let dataRequestId = topic.filter((data) => data.requestId === requestId);
+      let scrapData = dataRequestId[0]["trackingInfo"];
+      return scrapData.filter((data) => data.messageTrackingId === messageTrackingId );
   }
 }
 
