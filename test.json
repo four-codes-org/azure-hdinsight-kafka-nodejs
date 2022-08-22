@@ -1,0 +1,311 @@
+[
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Camt053_Aug18_007",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "CAMT053",
+                    "message": "{\"1\":\"F01AABBGB2XAXXX1554101019\",\"2\":\"O950220818AABBIE2XXXXX4117108217N\"}{4:\n:20: BUZ/MSG/22122021+\n:25: GB15ABBY60161331926819\n:28C: 1\n:60F: D220310EUR1234\n:61: 1401030103CREUR125.95\n:62F: C220310EUR123\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "a598d0e7-ebca-4271-b0da-92aa8bde1cd3",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "PARTIALSUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 2 ERROR: 1",
+        "requestId": "MX2MT_Camt053_Aug18_008",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "CAMT053",
+                    "message": "[{\"code\":\"H00001\",\"message\":\"Element Related is missing\"}]"
+                },
+                "messageTrackingId": "0a0ef7fd-a98b-45f0-9e1f-cf0817b96f53",
+                "status": "ERROR"
+            },
+            {
+                "payload": {
+                    "messageType": "CAMT053",
+                    "message": "{\"1\":\"F01AABBGB2XAXXX2294101490\",\"2\":\"O950220818AABBIE2XXXXX9941105457N\"}{4:\n:20: BUZ/MSG/22122021+\n:25: GB15ABBY60161331926819\n:28C: 1\n:60F: D220310EUR1234\n:61: 1401030103CREUR125.95\n:62F: C220310EUR123\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "cb8bd59f-9943-4db9-851e-d2930902df27",
+                "status": "SUCCESS"
+            },
+            {
+                "payload": {
+                    "messageType": "CAMT053",
+                    "message": "{\"1\":\"F01AABBGB2XAXXX4740101202\",\"2\":\"O950220818AABBIE2XXXXX7761105578N\"}{4:\n:20: BUZ/MSG/22122021+\n:25: GB15ABBY60161331926819\n:28C: 1\n:60F: D220310EUR1234\n:61: 1401030103CREUR105.95\n:62F: C220310EUR123\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "0fab76e3-9eaa-4257-b075-9e89f07bd98c",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac008_Aug18_002",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"5ddd156bba52-4d7da7ea-197cf311dc19\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/2100+00:00\n:20: 823823423\n:32A: 221209EUR123.45\n:33B: USD5000\n:36: 0.45\n:50K: \nJhon Doe\nHS 1 Foo Street 3454 Manila CABA AR\n:52D: \nFoo Corp\n 10 Foo Street 1234 Colombo CABA AR\n:53D: NL91ABNA0417164300\n260-C North El Camino. Real. Encinit\nas. CA 92024-2333\n:54A: ICBCUS4CXXX\nIT60X0542811101000000123456\n:54D: NL91ABNA0417164300\n260-C North El Camino. Real. Encinit\nas. CA 92024-2333\n:70: NOT PROVIDEDTestndtond\n:71A: OUR\n:71G: EUR123.45\n:72: /PHOA/726872729191\n:77B: /ORDERRES/In//ng\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "b2c01745-2ab1-4f98-86da-da58a853f0c1",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug18_020",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "XML",
+                    "message": "[ErrorMessage(code=BASIC_VAL_INVALID_XML_PAYLOAD, message=Invalid XML payload or payload message type, path=null)]"
+                },
+                "messageTrackingId": "af059ab9-bf67-4e87-b587-38fc8483b382",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug18_021",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "[{\"code\":\"CBPR_R22\",\"message\":\"Town name and country must be present for instructing agent\"}]"
+                },
+                "messageTrackingId": "e901682e-94a7-43ea-8d97-9fe435c336fd",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug16_Test208",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation. Reason: java.lang.NullPointerException"
+                },
+                "messageTrackingId": "698a9cd3-9136-4674-b085-8d495ea00ce0",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug16_Test308",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation. Reason: java.lang.NullPointerException"
+                },
+                "messageTrackingId": "b86a4367-99b9-4898-ad4b-da477bda50df",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac009_Aug19_900",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"8cfba24e-72fc-48ef-b8f8-9d07a1b0c32a\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/1045Z\n:20: Msgidfcn/pacs.00+\n:21: e2eid/pacs.009/1+\n:32A: 220218EUR123.45\n:52A: ITUSUSP1XXX\n:56A: AABBIE2X\n:57A: AABBIE2X\n:57D: \nMugdha Hans\n14-118\nCedar Malwar Road\n302020\n:58A: /\nAABBIE2X\n:72: /RETN//RETN/99/\n\t\t/R023\n\t\t/MREF/Instr/p\nacs.009/1\n\t\t/TREF/e2eid/pacs.009/1\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "47aa934f-8d05-475a-9088-207680ba08a4",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac009_Aug19_101",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"8cfba24e-72fc-48ef-b8f8-9d07a1b0c32a\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/1045Z\n:20: Msgidfcn/pacs.00+\n:21: e2eid/pacs.009/1+\n:32A: 220218EUR123.45\n:52A: ITUSUSP1XXX\n:56A: AABBIE2X\n:57A: AABBIE2X\n:57D: \nMugdha Hans\n14-118\nCedar Malwar Road\n302020\n:58A: /\nAABBIE2X\n:72: /RETN//RETN/99/\n\t\t/R023\n\t\t/MREF/Instr/p\nacs.009/1\n\t\t/TREF/e2eid/pacs.009/1\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "228e25d0-8e97-45b8-af93-d990ba3695c1",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac009_Aug11_602",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"8cfba24e-72fc-48ef-b8f8-9d07a1b0c32a\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/1045Z\n:20: Msgidfcn/pacs.00+\n:21: e2eid/pacs.009/1+\n:32A: 220218EUR123.45\n:52A: ITUSUSP1XXX\n:56A: AABBIE2X\n:57A: AABBIE2X\n:57D: \nMugdha Hans\n14-118\nCedar Malwar Road\n302020\n:58A: /\nAABBIE2X\n:72: /RETN//RETN/99/\n\t\t/R023\n\t\t/MREF/Instr/p\nacs.009/1\n\t\t/TREF/e2eid/pacs.009/1\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "1b6b7f71-b6cd-4281-a1cb-934fd2010e50",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac009_Aug19_903",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":null,\"113\":null}}{4:\n:13C:20: Msgidetfcn/02/03+\n:21: e2eid/02/03/2022+\n:32A: 221209EUR123.45\n:58A: /AT483200000012345864\nAABBIE2X\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "7ec9e460-c45f-4a84-9943-a672c974ef47",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "PARTIALSUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 1",
+        "requestId": "MX2MT_Pac009_Aug19_305",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "[{\"code\":\"CBPR_R53\",\"message\":\"Optional elements not allowed for creditor agent address\"}]"
+                },
+                "messageTrackingId": "4e7cebee-dea3-4b1c-bedd-d8984ca08fa5",
+                "status": "ERROR"
+            },
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"8cfba24e-72fc-48ef-b8f8-9d07a1b0c32a\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/1045Z\n:20: Msgidfcn/pacs.00+\n:21: e2eid/pacs.009/1+\n:32A: 220218EUR123.45\n:52A: ITUSUSP1XXX\n:56A: AABBIE2X\n:57A: AABBIE2X\n:57D: \nMugdha Hans\n14-118\nCedar Malwar Road\n302020\n:58A: /\nAABBIE2X\n:72: /RETN//RETN/99/\n\t\t/R023\n\t\t/MREF/Instr/p\nacs.009/1\n\t\t/TREF/e2eid/pacs.009/1\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "a93c3ead-f3c6-48eb-a137-11ec458383c1",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac009_Aug19_306",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "[{\"code\":\"CBPR_R53\",\"message\":\"Optional elements not allowed for creditor agent address\"}]"
+                },
+                "messageTrackingId": "e8bfa3bc-f33a-4122-b250-7eba3d1698c2",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "SUCCESS",
+        "statusMessage": "Payload processing status SUCCESS: 1 ERROR: 0",
+        "requestId": "MX2MT_Pac009_Aug19_603",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC009",
+                    "message": "{\"1\":\"ABCDUS33XXX\",\"2\":\"EFGHUS33XXX\",\"3\":{\"121\":\"8cfba24e-72fc-48ef-b8f8-9d07a1b0c32a\",\"113\":\"NORM\"}}{4:\n:13C: /CLSTIME/1045Z\n:20: Msgidfcn/pacs.00+\n:21: e2eid/pacs.009/1+\n:32A: 220218EUR123.45\n:52A: ITUSUSP1XXX\n:56A: AABBIE2X\n:57A: AABBIE2X\n:57D: \nMugdha Hans\n14-118\nCedar Malwar Road\n302020\n:58A: /\nAABBIE2X\n:72: /RETN//RETN/99/\n\t\t/R023\n\t\t/MREF/Instr/p\nacs.009/1\n\t\t/TREF/e2eid/pacs.009/1\n-}{\"5\":{\"CHK\":\"\"}}"
+                },
+                "messageTrackingId": "54d38eb1-2a20-4853-bf2f-86d596b857ba",
+                "status": "SUCCESS"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug22_Test003",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "[{\"code\":\"MDTR_05\",\"message\":\"Mandatory element missing biz svc\"},{\"code\":\"D00004\",\"message\":\"Invalid Country Code for regulatory reporting details|SWIFTNet Validation:true | Severity:Fatal\"},{\"code\":\"D00004\",\"message\":\"Invalid Country Code for regulatory reporting authority|SWIFTNet Validation:true | Severity:Fatal\"}]"
+                },
+                "messageTrackingId": "7cc23218-727c-4e4d-ae29-a3b3b5087212",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug22_Test005",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation."
+                },
+                "messageTrackingId": "4aa5c3f1-f630-487b-bac8-a7ef98c57b53",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug22_Test005",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation."
+                },
+                "messageTrackingId": "1bb8fb3d-b357-402c-b110-13630e029b9b",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug22_Test006",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation."
+                },
+                "messageTrackingId": "8facbb73-0c0a-4429-ba5a-49f959996f38",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "statusCode": "ERROR",
+        "statusMessage": "Payload processing status SUCCESS: 0 ERROR: 1",
+        "requestId": "MX2MT_Pac008_Aug22_Test007",
+        "trackingInfo": [
+            {
+                "payload": {
+                    "messageType": "PAC008",
+                    "message": "Error during transformation."
+                },
+                "messageTrackingId": "7e33176f-ad86-45e2-98b7-27cd0a2927a3",
+                "status": "ERROR"
+            }
+        ]
+    }
+]
