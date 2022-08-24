@@ -36,10 +36,13 @@ class topicsData {
   }
   
   getMessagesWithMessageTrackingId(topic, requestId, messageTrackingId) {
-    console.log(topic);
       let dataRequestId = topic.filter((data) => data.requestId === requestId);
       let scrapData = dataRequestId[0]["trackingInfo"];
       return scrapData.filter((data) => data.messageTrackingId === messageTrackingId );
+  }
+  getMessagesWithTrackingId(topic, requestId, trackingId) {
+      let dataRequestId = topic.filter((data) => data.requestId === requestId);
+      return dataRequestId.filter((data) => data.trackingId === trackingId );
   }
 }
 
