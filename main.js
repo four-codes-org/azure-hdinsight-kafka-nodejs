@@ -98,8 +98,13 @@ app.get("/kafka/topic/:topic/:requestId/:messageTrackingId", (req, res) => {
     if ( topic == undefined && requestId == undefined && messageTrackingId == undefined ) {
       res.send({ statusCode: 404, message: "Bad request" });
     } else {
-      if (topic === "ISOConvertor_Response" || topic === "ISOConvertor_MT2MX_Response" ) {
+      
+      if (topic === "ISOConvertor_Response" || topic === "ISOConvertor_MT2MX_Response" || topic === "MT_Ingestor_Ingress" ) {
+        if (topic === "MT_Ingestor_Ingress" ) {
+          res.json(topicReader.getMessagesWithTrackingId(dataScrap,requestId,messageTrackingId));
+        } else {
         res.json(topicReader.getMessagesWithMessageTrackingId(dataScrap,requestId,messageTrackingId));
+        }
       } else {
         res.json({
           messages: "this topic not supported to filter messageTrackingId",
