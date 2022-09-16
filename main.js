@@ -4,6 +4,20 @@ const topicsData = require("./custom/topicsData");
 const topicReader = new topicsData();
 const topicLookupFromList = require("./custom/topicLookupFromList");
 const res = require("express/lib/response");
+const Model = require('./models/model');
+const mongoose = require('mongoose');
+const mongoString = process.env.DATABASE_URL;
+
+mongoose.connect(mongoString);
+const database = mongoose.connection;
+
+database.on('error', (error) => {
+    console.log(error)
+})
+
+database.once('connected', () => {
+    console.log('Database Connected');
+})
 
 // let KAFKA_HOST = ["localhost:9092"];
 
