@@ -128,7 +128,7 @@ app.get("/kafka/topic/:topic/:requestId/:messageTrackingId", (req, res) => {
   }
 });
 
-router.post('/post', async (req, res) => {
+router.post('/kafka/message/post/', async (req, res) => {
     try {
         let array = req.body
         array.forEach(arr=> {
@@ -190,7 +190,7 @@ app.get('/kafka/message/:id', async (req, res) => {
     }
 })
 
-router.post('/multiMessages/', async (req, res) => {
+router.post('/kafka/multiMessages/', async (req, res) => {
     try {
         let array = req.body
         const data = await Model.find({ "messageId": array }); 
