@@ -81,7 +81,7 @@ app.get("/kafka/topic/:topic/", (req, res) => {
   let pathRouteTopic = topicLookupFromList(topicList, topic);
   if (pathRouteTopic === undefined)
     res.json({ status: "topic not found", statusCode: 404 });
-  else res.json(topicReader[topic]);
+  else res.json(topicReader[topic].reverse());
 });
 
 app.get("/kafka/topic/:topic/:requestId", (req, res) => {
