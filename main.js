@@ -19,6 +19,12 @@ database.once('connected', () => {
     console.log('Database Connected');
 })
 
+// LIST_OF_KAFKA_HOST="10.42.60.199:9092,10.42.60.203:9092,10.42.60.200:9092"
+// let KAFKA_HOST = process.env.LIST_OF_KAFKA_HOST.split(",");
+// LIST_KAFKA_TOPICS="CBPR_Validator_Ingress,MX2MT_Transformer_Ingress,MT_Builder_Ingress,Error,MX_Response_Builder_Ingress,MT2MX_Transformer_Ingress,MX_Validator_Ingress,MT_Validator_Ingress,MT_Response_Builder_Ingress,MT_Ingestor_Ingress,ISOConvertor_Response,MX_Builder_Ingress,ISOConvertor_MT2MX_Response,Error_Mx2Mt,Error_Mt2Mx,consolidator_topic"
+// let topicList = process.env.LIST_KAFKA_TOPICS.split(",");
+
+
 // let KAFKA_HOST = ["localhost:9092"];
 
 let KAFKA_HOST = ["10.42.60.199:9092","10.42.60.203:9092","10.42.60.200:9092"];
