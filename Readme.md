@@ -11,3 +11,4 @@ a.forEach((a) => console.log(a));
 ```
 
 
+![image](https://user-images.githubusercontent.com/57703276/218307671-07a6587b-ad7c-409f-ab96-c931d6bcf643.png)
